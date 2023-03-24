@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -6,21 +6,24 @@
     box-sizing: border-box;
 }
 
-main{
+main {
     display: grid;
     grid-template-rows: 25% 75%;
     height: 100vh;
     padding: 2rem;
+    gap: .5rem;
 }
 
-.display{
+.display {
     display: grid;
     place-content: center right;
     font-size: 1.5rem;
-    padding-right: 2rem;
+    padding: 2rem;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    background-color: hsla(0, 0%, 100%, 0.7);
 }
 
-.inputs{
+.inputs {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -28,20 +31,20 @@ main{
     gap: .5rem;
 }
 
-.inputs button{
+.inputs button {
     font-size: 1.25rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.inputs button:active{
+.inputs button:active {
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-.inputs button:nth-child(3){
-    background: red;
+.inputs button:nth-child(3) {
+    background: rgb(219, 86, 86);
 }
 
-.inputs button:nth-last-child(1){
-    background-color: green;
+.inputs button:nth-last-child(1) {
+    background-color: palegreen;
     grid-area: 5/3/6/5;
 }
