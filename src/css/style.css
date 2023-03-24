@@ -11,7 +11,7 @@ main {
     grid-template-rows: 25% 75%;
     height: 100vh;
     padding: 2rem;
-    gap: .5rem;
+    row-gap: .5rem;
 }
 
 .display {
