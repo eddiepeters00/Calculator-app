@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  grid-template-rows: 25% 75%;
+  row-gap: .5rem;
+  padding: 2rem;
+  display: grid;
+}
+
+.display {
+  background-color: #ffffffb3;
+  place-content: center right;
+  padding: 2rem;
+  font-size: 1.5rem;
+  display: grid;
+  box-shadow: inset 3px 3px 6px #ccdbe8, inset -3px -3px 6px 1px #ffffff80;
+}
+
+.inputs {
+  height: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: .5rem;
+  display: grid;
+}
+
+.inputs button {
+  font-size: 1.25rem;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.inputs button:active {
+  box-shadow: inset 3px 3px 6px #ccdbe8, inset -3px -3px 6px 1px #ffffff80;
+}
+
+.inputs button:nth-child(3) {
+  background: #db5656;
+}
+
+.inputs button:nth-last-child(1) {
+  background-color: #98fb98;
+  grid-area: 5 / 3 / 6 / 5;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */
