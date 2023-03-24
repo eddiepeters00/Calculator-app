@@ -1,18 +1,21 @@
 {
   "name": "fe22-js2-mp4-eddie-peters",
   "version": "1.0.0",
+  "homepage": "https://eddiepeters00.github.io/FE22-js2-mp4-eddie-peters",
   "description": "Calculator",
   "directories": {
     "doc": "docs"
   },
   "devDependencies": {
     "del-cli": "^5.0.0",
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3"
   },
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
-    "clean": "del-cli ./.parcel-cache ./docs ./dist"
+    "clean": "del-cli ./.parcel-cache ./docs ./dist",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
