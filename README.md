@@ -1,2 +1,2 @@
-# FE22-js2-mp4-eddie-peters
+# Calculator app
  Calculator app created with TypeScript
